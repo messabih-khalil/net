@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    font-family: 'Netflix Sans','Helvetica Neue','Segoe UI',Roboto,Ubuntu,sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(images/DZ-en-20221219-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 97vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 58px;
+    margin: 5px 0 0 19px;
+}
+
+.upper-side {
+    margin: 15px 0 0 20px;
+}
+
+select {
+    background-color: rgba(128, 128, 128, 0.078);
+    text-transform: capitalize;
+    font-size: 15px;
+    color: white;
+    padding: 9px 10px;
+    border-radius: 2px;
+    border-color: white;
+}
+
+option {
+    background-color: gray;
+}
+
+.signIn {
+    color: white;
+    background-color: rgb(228, 1, 1);
+    padding: 8px 17px;
+    border: 0px;
+    border-radius: 3px;
+    margin: 0 58px 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.prompt, .prompt2 {
+    color: white;
+    margin: 110px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+h1 {
+    width: 700px;
+    font-size: 63px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.text1 {
+    font-size: 27px;
+    margin: 0;
+}
+
+.text2 {
+    font-size: 19px;
+    margin: 26px 0 10px 0;
+    font-weight: 500;
+}
+
+.input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: baseline;
+}
+
+.input div input {
+    width: 490px;
+    height: 68px;
+    padding-left: 12px;
+    border: 0;
+    border-radius: 2px 0 0 2px;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+}
+
+.input div {
+    position: relative;
+}
+
+.input div span {
+    position: absolute;
+    top: 24px;
+    left: 11px;
+    color: #aaa;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input div input:focus ~ span{
+    top: 2px;
+    font-size: small;
+    color: #222;
+}
+
+.input button {
+    width: 240px;
+    height: 70px;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(228, 1, 1);
+    border: 0;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    height: 8px;
+    background-color: rgb(38, 38, 38);
+}
+
+section, footer {
+    color: white;
+    background-color: #000;
+    height: 465px;
+    /*width: 100%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section1 {
+    height: 390px;
+}
+
+.animation {
+    position: relative;
+    z-index: 1;
+}
+
+.video-section1 {
+    height: 211px;
+    position: absolute;
+    right: 75px;
+    top: 80px;
+    z-index: -1;
+}
+
+.img-section2, .img-section4 {
+    height: 380px;
+}
+
+.section-2 {
+    position: relative;
+}
+
+.down-card {
+    padding: .5em .75em;
+    width: 60%;
+    position: absolute;
+    bottom: 20px;
+    left: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+    border-radius: 10px;
+}
+
+.image {
+    height: 80px;
+    margin: 0 1em 0 0;
+}
+
+.image ~ div {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.download {
+    color: #0071eb;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image + div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.down-animation {
+    height: 3.75em;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    width: 3em;
+}
+
+.img-section3 {
+    height: 405px;
+}
+
+.video-section3 {
+    height: 190px;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: -1;
+}
+
+.section-1 {
+    width: 550px;
+    padding-right: 60px;
+}
+
+.section-h {
+    width: inherit;
+    font-size: 50px;
+    text-align: start;
+    letter-spacing: -1px;
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 52px;
+}
+
+.section-p {
+    font-size: 27px;
+    font-weight: 500;
+    text-align: start;
+    margin: 0;
+}
+
+.section1, .section3 {
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px 20px 20px;
+}
+
+.section2, .section4 {
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 0 20px 20px 40px;
+}
+
+.section4 {
+    width: 1150px;
+}
+
+.sec3 {
+    padding: 35px 0;
+}
+
+.sec4 {
+    padding: 30px 0;
+}
+
+.ask {
+    height: auto;
+    flex-direction: column;
+}
+
+.ask h1 {
+    font-size: 50px;
+    margin: 50px 0 40px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button h3 {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.button {
+    background-color: rgb(60, 60, 60);
+    height: 70px;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 22px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.list {
+    width: 820px;
+}
+
+.question span {
+    font-size: 60px;
+    font-weight: 1;
+    position: relative;
+    bottom: 6px;
+}
+
+.prompt2 {
+    margin: 0 0 80px;
+}
+
+footer {
+    height: 300px;
+    color: rgb(109, 109, 109);
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 5% 20% 10px;
+    text-transform: capitalize;
+}
+
+.more-informations {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.more-informations ul li{
+    margin-bottom: 16px;
+}
+
+/*.choose-language::after {
+    content: "\e898";
+}*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.choose-language select {
+    color: inherit;
+}
+
+/*span {
+    display: block;
+    padding: 20px;
+    background-color: rgb(60, 60, 60);
+}*/
+
+
+
+
+
+
